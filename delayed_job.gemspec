@@ -31,8 +31,8 @@ Gem::Specification.new do |s|
     lib/delayed/performable_method.rb
     lib/delayed/worker.rb
     lib/delayed_job.rb
-    tasks/jobs.rake
-    tasks/tasks.rb
+    lib/tasks/jobs.rake
+    lib/tasks/tasks.rb
   ]
   s.test_files = %w[
     spec/database.rb

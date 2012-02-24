@@ -6,6 +6,8 @@ module Delayed
   # A job object that is persisted to the database.
   # Contains the work object as a YAML field.
   class Job < ActiveRecord::Base
+
+	  before_save :ensure_run_at_is_set				
     MAX_ATTEMPTS = 25
     MAX_RUN_TIME = 4.hours
     set_table_name :delayed_jobs
@@ -254,7 +256,7 @@ module Delayed
 
   protected
 
-    def before_save
+	  def ensure_run_at_is_set
       self.run_at ||= self.class.db_time_now
     end
 

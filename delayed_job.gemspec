@@ -4,7 +4,7 @@
 
 Gem::Specification.new do |s|
   s.name     = "delayed_job"
-  s.version  = "1.7.1"
+  s.version  = "1.7.1.1"
   s.date     = "2012-02-24"
   s.summary  = "Database-backed asynchronous priority queue system -- Extracted from Shopify"
   s.email    = "tobi@leetsoft.com"

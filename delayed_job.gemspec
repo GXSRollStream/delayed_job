@@ -4,7 +4,7 @@
 
 Gem::Specification.new do |s|
   s.name     = "delayed_job"
-  s.version  = "1.7.1.1"
+  s.version  = "1.7.1.2"
   s.date     = "2012-02-24"
   s.summary  = "Database-backed asynchronous priority queue system -- Extracted from Shopify"
   s.email    = "tobi@leetsoft.com"
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
     lib/delayed/message_sending.rb
     lib/delayed/performable_method.rb
     lib/delayed/worker.rb
+    lib/delayed/ralities.rb
     lib/delayed_job.rb
     lib/tasks/jobs.rake
     lib/tasks/tasks.rb
